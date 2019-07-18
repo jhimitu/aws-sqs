@@ -10,5 +10,7 @@ public class Library {
     public static void main(String[] args) {
         Sender sender = new Sender();
         sender.send("https://sqs.us-east-2.amazonaws.com/777022452897/QueueA", "hello, world!");
+        Receiver receiver = new Receiver();
+        receiver.receive("https://sqs.us-east-2.amazonaws.com/777022452897/QueueA");
     }
 }
