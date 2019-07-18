@@ -5,8 +5,6 @@ import com.amazonaws.services.sqs.AmazonSQSClientBuilder;
 import com.amazonaws.services.sqs.model.SendMessageRequest;
 
 public class Sender {
-    private String url;
-    private String message;
 
     AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
 
